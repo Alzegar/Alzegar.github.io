@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Notas</title>
+
+  <script type="module" crossorigin src="/assets/pages/principal-DvPXwLfW.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/client-CbEimS2L.js">
+  <link rel="stylesheet" crossorigin href="/assets/principal-Cp3w0gp5.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <h1>Sistema de Notas</h1>
+            <a href="../../index.html" id="btnCerrarSesion" class="btn-cerrar">Cerrar sesión</a>
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <!-- BIENVENIDA -->
+        <section class="bienvenida">
+            <h2 id="nombreEstudiante">
+                ¡Bienvenido!
+            </h2>
+
+            <p>
+                Aquí puedes consultar tus cursos y calificaciones.
+            </p>
+        </section>
+
+
+        <!-- RESUMEN -->
+        <section class="resumen">
+
+            <div class="card">
+                <span class="card-titulo">Cursos</span>
+                <strong id="cantidadCursos">0</strong>
+            </div>
+
+            <div class="card">
+                <span class="card-titulo">Promedio</span>
+                <strong id="promedioGeneral">0.00</strong>
+            </div>
+
+        </section>
+
+
+        <!-- TABLA DE CURSOS -->
+        <section class="tabla-section">
+
+            <h2>Mis cursos</h2>
+
+            <div class="tabla-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>NOMBRE DEL CURSO</th>
+                            <th>NOMBRE DEL PROFESOR</th>
+                            <th>CRÉDITOS</th>
+                            <th>NOTA</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tablaCursos">
+
+                        <tr>
+                            <td colspan="4" class="cargando">
+                                Cargando cursos...
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
